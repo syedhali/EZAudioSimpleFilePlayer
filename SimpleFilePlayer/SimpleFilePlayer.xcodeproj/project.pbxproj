@@ -13,9 +13,13 @@
 		66C772A01C49BEFB0022DEA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C7729E1C49BEFB0022DEA4 /* Main.storyboard */; };
 		66C772A21C49BEFB0022DEA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C772A11C49BEFB0022DEA4 /* Assets.xcassets */; };
 		66C772A51C49BEFB0022DEA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C772A31C49BEFB0022DEA4 /* LaunchScreen.storyboard */; };
+		66C772AF1C49BFF30022DEA4 /* audio_file.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66C772AE1C49BFF30022DEA4 /* audio_file.wav */; };
+		BB1AFDEB888F275D94E9C305 /* libPods-SimpleFilePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C4DD6C77B9C92C7456B2AB /* libPods-SimpleFilePlayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17C4DD6C77B9C92C7456B2AB /* libPods-SimpleFilePlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleFilePlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36990FBBEDBFC6EFB17C7994 /* Pods-SimpleFilePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleFilePlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleFilePlayer/Pods-SimpleFilePlayer.release.xcconfig"; sourceTree = "<group>"; };
 		66C772921C49BEFB0022DEA4 /* SimpleFilePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleFilePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C772961C49BEFB0022DEA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66C772981C49BEFB0022DEA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		66C772A11C49BEFB0022DEA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66C772A41C49BEFB0022DEA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66C772A61C49BEFB0022DEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C772AE1C49BFF30022DEA4 /* audio_file.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio_file.wav; sourceTree = "<group>"; };
+		B5F367BD25F164F24CACDDFA /* Pods-SimpleFilePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleFilePlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleFilePlayer/Pods-SimpleFilePlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1AFDEB888F275D94E9C305 /* libPods-SimpleFilePlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				66C772941C49BEFB0022DEA4 /* SimpleFilePlayer */,
 				66C772931C49BEFB0022DEA4 /* Products */,
+				FFF2302F422EA2336A4B5881 /* Pods */,
+				6A10284AACB4DA660C5FA48C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +67,7 @@
 		66C772941C49BEFB0022DEA4 /* SimpleFilePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				66C772AE1C49BFF30022DEA4 /* audio_file.wav */,
 				66C772981C49BEFB0022DEA4 /* AppDelegate.h */,
 				66C772991C49BEFB0022DEA4 /* AppDelegate.m */,
 				66C7729B1C49BEFB0022DEA4 /* ViewController.h */,
@@ -79,6 +89,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6A10284AACB4DA660C5FA48C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17C4DD6C77B9C92C7456B2AB /* libPods-SimpleFilePlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFF2302F422EA2336A4B5881 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5F367BD25F164F24CACDDFA /* Pods-SimpleFilePlayer.debug.xcconfig */,
+				36990FBBEDBFC6EFB17C7994 /* Pods-SimpleFilePlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66C772A91C49BEFB0022DEA4 /* Build configuration list for PBXNativeTarget "SimpleFilePlayer" */;
 			buildPhases = (
+				1C92D4C58DC1A05894C5CF67 /* Check Pods Manifest.lock */,
 				66C7728E1C49BEFB0022DEA4 /* Sources */,
 				66C7728F1C49BEFB0022DEA4 /* Frameworks */,
 				66C772901C49BEFB0022DEA4 /* Resources */,
+				C3012BB1637DD2C0EF811933 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C772AF1C49BFF30022DEA4 /* audio_file.wav in Resources */,
 				66C772A51C49BEFB0022DEA4 /* LaunchScreen.storyboard in Resources */,
 				66C772A21C49BEFB0022DEA4 /* Assets.xcassets in Resources */,
 				66C772A01C49BEFB0022DEA4 /* Main.storyboard in Resources */,
@@ -143,6 +173,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C92D4C58DC1A05894C5CF67 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3012BB1637DD2C0EF811933 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleFilePlayer/Pods-SimpleFilePlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66C7728E1C49BEFB0022DEA4 /* Sources */ = {
@@ -261,6 +324,7 @@
 		};
 		66C772AA1C49BEFB0022DEA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F367BD25F164F24CACDDFA /* Pods-SimpleFilePlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleFilePlayer/Info.plist;
@@ -272,6 +336,7 @@
 		};
 		66C772AB1C49BEFB0022DEA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36990FBBEDBFC6EFB17C7994 /* Pods-SimpleFilePlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleFilePlayer/Info.plist;
@@ -300,6 +365,7 @@
 				66C772AB1C49BEFB0022DEA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
